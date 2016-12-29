@@ -96,10 +96,10 @@
 		echo "<br>";
 		if($split > 1){
 				echo "Tip each: ";
-				echo $subtotal * ($percentage / 100.0);
+				echo $subtotal * ($percentage / 100.0) / $split;
 				echo "<br>";
 				echo "Total each: ";
-				echo $subtotal * (1 + $percentage / 100.0);
+				echo $subtotal * (1 + $percentage / 100.0) / $split;
 				echo "<br>";
 		}
 		echo "</div>";
